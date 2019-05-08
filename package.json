@@ -1,0 +1,26 @@
+{
+  "name": "4_done",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergiySobchuk/CURSOR_HW_12_mocha.git"
+  },
+  "author": "Serhii Sobchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergiySobchuk/CURSOR_HW_12_mocha/issues"
+  },
+  "homepage": "https://github.com/SergiySobchuk/CURSOR_HW_12_mocha#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}

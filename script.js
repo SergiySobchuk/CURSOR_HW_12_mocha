@@ -27,39 +27,42 @@ function fibonacci(n) {
         }
     }
 }
-class Iter {
+class Iterator {
     constructor(startIndex){
         this.index = startIndex;
+        this.initIndex = startIndex;
     }
     current(){
         this.fibonacci = fibonacci(this.index).number;
-        console.log("value: ", this.fibonacci);
+        // console.log("value: ", this.fibonacci);
+        return this.fibonacci;
     }
     next(){
         this.index += 1;
         this.fibonacci = fibonacci(this.index).number;
-        console.log("value: ",this.fibonacci);
+        // console.log("value: ",this.fibonacci);
 
     }
     prev(){
         this.index -= 1;
         this.fibonacci = fibonacci(this.index).number;
-        console.log("value: ",this.fibonacci);
+        // console.log("value: ",this.fibonacci);
     }
     key(){
         this.fibonacci = fibonacci(this.index).index;
-        console.log("key: ",this.fibonacci);
+        // console.log("key: ",this.fibonacci);
+        return this.fibonacci;
     }
     rewind(){
-        this.index = 0;
-        console.log("value : 0");
-        console.log("key: 0");
+        this.index = this.initIndex;
+        // console.log("value : 0");
+        // console.log("key: 0");
     }
 }
-
-iterator = new Iter(6);
-iterator.current();
-iterator.next();
-iterator.prev();
-iterator.key();
-iterator.rewind();
+module.exports = Iterator;
+// iterator = new Iterator(6);
+// iterator.current();
+// iterator.next();
+// iterator.prev();
+// iterator.key();
+// iterator.rewind();
